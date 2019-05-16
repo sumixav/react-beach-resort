@@ -1,0 +1,11 @@
+In class based component, use RoomContext 
+    (static contextType = RoomContext;const context = this.context)
+In functional components, use RoomConsumer
+RoomProvider wraps components, passes values down component tree
+
+a higher-order component is a function that takes a component and returns a new component
+Whereas a component transforms props into UI, a higher-order component transforms a component into another component.
+
+HOC is a pattern where a fn accepts a component and returns an enhanced component. HOC pattern is used to share functionality among patterns withput having to repeat the code
+common functionality passed down as peops to child components
+to render the props from child in hoc, use {...this.props}(class basedcomp)/{...props}(functional comp) in HOC when rendering, since props with original components are passed to HOC not to original components
